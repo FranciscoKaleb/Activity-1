@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Homepage</title>
+
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray: #64748b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        body {
+            background: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: white;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 1.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            margin-left: 1rem;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        .hero {
+            padding: 4rem 1.5rem;
+            text-align: center;
+            background: linear-gradient(135deg, #e0e7ff, #f8fafc);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            color: var(--gray);
+            max-width: 600px;
+            margin: auto;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .features {
+            padding: 3rem 1.5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        footer {
+            background: #020617;
+            color: #cbd5f5;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <strong>MyWebsite</strong>
+            <div>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>Welcome to My Homepage</h1>
+    <p>
+        A simple, clean starter homepage layout.
+        You can customize this for a portfolio, school project, or web app.
+    </p>
+    <a href="#" class="btn">Get Started</a>
+</section>
+
+<section class="features container">
+    <div class="grid">
+        <div class="card">
+            <h3>Fast Setup</h3>
+            <p>Pure HTML & CSS. No frameworks required.</p>
+        </div>
+        <div class="card">
+            <h3>Responsive</h3>
+            <p>Works well on desktop, tablet, and mobile.</p>
+        </div>
+        <div class="card">
+            <h3>Extendable</h3>
+            <p>Easy to add JavaScript, backend, or styling.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 MyWebsite. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
